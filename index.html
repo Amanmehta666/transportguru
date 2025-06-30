@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TransportGuru - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="TransportGuru Logo" />
+      <h1>TransportGuru</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Delivering Trust, Driving Innovation</h2>
+      <p>Your logistics partner for every journey.</p>
+      <a href="services.html" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  <section class="preview-services">
+    <h2>Our Key Services</h2>
+    <div class="service-cards">
+      <div class="card reveal">
+        <img src="images/fleet.jpg" alt="Fleet Service" />
+        <h3>Fleet Transport</h3>
+        <p>Optimized, efficient, and fast freight handling.</p>
+      </div>
+      <div class="card reveal">
+        <img src="images/24hr.jpg" alt="24x7 Service" />
+        <h3>24x7 Availability</h3>
+        <p>Anytime delivery across Australia with tracking support.</p>
+      </div>
+      <div class="card reveal">
+        <img src="images/value.jpg" alt="Value Add" />
+        <h3>Value-Added Services</h3>
+        <p>Packaging, insurance, and real-time support.</p>
+      </div>
+    </div>
+    <a href="services.html" class="btn">View All Services</a>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-box reveal">
+      <p>“TransportGuru transformed our supply chain. Reliable and professional.”</p>
+      <h4>— Akshay Patel, FastTrack Logistics</h4>
+    </div>
+    <div class="testimonial-box reveal">
+      <p>“Impressive support and 24/7 service. Highly recommended!”</p>
+      <h4>— Neha Sharma, Urban Retail</h4>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us reveal" id="why-choose" style="opacity: 0; transform: translateY(40px); transition: all 1s ease;">
+    <div class="why-choose-container">
+      <h2>Why Choose Us?</h2>
+      <div class="reasons">
+        <div class="reason">
+          <img src="images/reliable.png" alt="Reliable" />
+          <h4>Proven Reliability</h4>
+          <p>98% on-time delivery success rate across 1000+ businesses.</p>
+        </div>
+        <div class="reason">
+          <img src="images/technology.png" alt="Advanced Tech" />
+          <h4>Smart Logistics</h4>
+          <p>We use AI-powered route planning for cost-effective transport.</p>
+        </div>
+        <div class="reason">
+          <img src="images/support.png" alt="Support" />
+          <h4>24/7 Customer Support</h4>
+          <p>Our dedicated team is always ready to assist your queries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 TransportGuru Pty Ltd | ABN: 00 000 000 000</p>
+    <p>Contact: +61 433 296 375 | info@transportguru.au</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.reveal', {
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 200
+    });
+
+    // Show Why Choose Us with a delay
+    setTimeout(() => {
+      const whySection = document.getElementById('why-choose');
+      if (whySection) {
+        whySection.style.opacity = '1';
+        whySection.style.transform = 'translateY(0)';
+      }
+    }, 3000);
+  </script>
+</body>
+</html>

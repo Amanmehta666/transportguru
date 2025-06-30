@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | TransportGuru</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="TransportGuru Logo" />
+      <h1>TransportGuru</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Services Hero -->
+  <section class="services-hero">
+    <div class="hero-text">
+      <h2>Our Services</h2>
+      <p>We provide flexible, scalable, and efficient transport solutions across Australia.</p>
+    </div>
+  </section>
+
+  <!-- Services List -->
+  <section class="all-services">
+    <div class="service-list reveal">
+      <div class="service-card">
+        <img src="images/express.png" alt="Express Delivery">
+        <h3>Express Delivery</h3>
+        <p>Same-day & next-day delivery options for urgent needs.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/cargo.png" alt="Cargo Handling">
+        <h3>Bulk Cargo Handling</h3>
+        <p>Heavy and fragile items moved with safety and efficiency.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/track.png" alt="Tracking">
+        <h3>Real-Time Tracking</h3>
+        <p>GPS-powered tracking of your shipments on the go.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/insurance.png" alt="Insurance">
+        <h3>Logistics Insurance</h3>
+        <p>Insurance options to protect your goods in transit.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/customs.png" alt="Custom Clearance">
+        <h3>Customs Clearance</h3>
+        <p>Hassle-free documentation for interstate or international delivery.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/warehouse.png" alt="Warehousing">
+        <h3>Warehousing</h3>
+        <p>Secure short-term & long-term storage facilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TransportGuru Pty Ltd | ABN: 00 000 000 000</p>
+    <p>Contact: +61 433 296 375 | info@transportguru.au</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    ScrollReveal().reveal('.reveal', {
+      distance: '60px',
+      duration: 1200,
+      easing: 'ease',
+      origin: 'bottom',
+      interval: 150
+    });
+  </script>
+</body>
+</html>
